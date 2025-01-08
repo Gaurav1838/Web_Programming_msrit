@@ -1,0 +1,13 @@
+<html>
+<head>Webpage</head>
+    <title>
+        Welcome to my webpage
+    </title>
+<body>
+    <p>This is the first paragraph</p>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <b>This is a bold text</b>
+    <br>
+    <i>This is an italic text</i>
+</body>
