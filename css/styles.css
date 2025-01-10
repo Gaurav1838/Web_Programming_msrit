@@ -1,0 +1,18 @@
+h3{
+    color: darkkhaki;
+}
+
+#ID_selector{
+    color:darkseagreen;
+}
+.class_selector{
+    color: red;
+}
+p{
+    color: blueviolet;
+}
+div{
+    padding: 50px;
+    border: 5px solid;
+    margin: 500x;
+}
