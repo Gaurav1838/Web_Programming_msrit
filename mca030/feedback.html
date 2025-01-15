@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <form>
+        <h1>Feedback Form</h1>
+        <label>Name: <input type="text"></label>
+        <br><br>
+        <label>Phone number: <input type="number"></label>
+        <br><br>
+        <label>Rating: <input type="number" value="5" min="0" max="10"></label>
+        <br><br>
+        <label>Rating: <input type="range" value="50" list="rating" style="width: 250px;"></label>
+        <datalist id="rating">
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="40"></option>
+            <option value="50"></option>
+            <option value="60"></option>
+            <option value="70"></option>
+            <option value="80"></option>
+            <option value="90"></option>
+            <option value="100"></option>
+        </datalist><br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
