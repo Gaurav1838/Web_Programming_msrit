@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .back{
+            height: 900px;
+            width: 900px;
+            background-color: lightgray;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+            position: absolute;
+        
+        }
+        .front{
+            padding: 50px;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 25px;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="back"></div>
+    <div class="front">This is a modal box</div>
+</body>
+</html>
