@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./xml_example.xsl" type="text/xsl"?>
+<!DOCTYPE Bike [
+    <!ELEMENT Bike (name+)>
+    <!ELEMENT name (make,model,displacement,HP)>
+    <!ATTLIST name id CDATA #REQUIRED>
+    <!ELEMENT make (#PCDATA)>
+    <!ELEMENT model (#PCDATA)>
+    <!ELEMENT displacement (#PCDATA)>
+    <!ELEMENT HP (#PCDATA)>
+]>
+<Bike>
+    <name id="01">
+    <make>Honda</make>
+    <model>CBR250R</model>
+    <displacement>250</displacement>
+    <HP>90</HP>
+    </name>
+
+    <name id="02">
+    <make>BMW</make>
+    <model>S1000RR</model>
+    <displacement>1000</displacement>
+    <HP>90</HP>
+    </name>
+
+    <name id="03">
+    <make>Yamaha</make>
+    <model>RX</model>
+    <displacement>135</displacement>
+    <HP>90</HP>
+    </name>
+</Bike>
