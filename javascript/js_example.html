@@ -7,6 +7,7 @@
 </head>
 <body>
     <script>
+        // Arithmetic Operators
         let a = 10;
         let b = 5;
         console.log(a+b);
@@ -15,6 +16,32 @@
         console.log(a/b);
         console.log(a%b);
         console.log(a**b);
+        document.write(a+b);
+        window.alert(a-b);
+
+        // Assignment Operators
+        let x = 10;
+        console.log(x+=10);
+        console.log(x-=4);
+        console.log(x*=2);
+        console.log(x/=5);
+
+        // Logical Operators
+        let isLoggedIn = true;
+        let isAdmin = false;
+        console.log(isLoggedIn && isAdmin); //false(AND)
+        console.log(isLoggedIn || isAdmin); //true(OR)
+        console.log(isLoggedIn); //false(NOT)
+
+        // Comparison Operators
+        let num1=10;
+        let num2="10";
+        console.log(num1===num2); //checks value and datatype(false) 
+        console.log(num1==num2); //checks value only(true)
+        console.log(num1 != num2); //loose equality(false)
+        console.log(num1 !== num2); //strict equality(true)
+        console.log(num1>5) //true
+        console.log(num1<5) // false
     </script>
 </body>
 </html>
