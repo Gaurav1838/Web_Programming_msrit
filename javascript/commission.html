@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Sales</h4>
+    <input type="number" name="" id="sale">
+    <br>
+    <button onclick="commision()">Submit</button>
+    <br><br>
+    <p id="p"></p>
+    <script>
+        let commision = () => {
+            let val = parseInt(document.getElementById('sale').value)
+            let comp = 0
+            if(1000<=val && val<=5000){
+                comp = (val*10)/100;
+            }else if (5001 <= val && val<= 10000){
+                comp = (val*15)/100;
+            }else if(val>=10001){
+                comp = (val*20)/100;
+            }
+
+            document.getElementById('p').innerHTML = `Commission: ${comp}`
+        }
+    </script>
+</body>
+</html>

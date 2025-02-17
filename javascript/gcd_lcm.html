@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function gcd(a,b) {
+        let x = 0;
+        for (let i = 1; i <= (a+b); i++) {
+            if(a%i == 0 && b%i ==0){
+                x = i;
+            }
+        }
+        return x;
+
+        }
+
+        function lcm(a,b){
+            let lcm = (a*b) / gcd(a,b)
+            return lcm
+        }
+
+        console.log(`LCM: ${lcm(10,15)}`);
+        console.log(`GCD: ${gcd(10,15)}`);
+    </script>
+</body>
+</html>
