@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is a H1 tag</h1>
+    <h2>This is a H2 tag</h2>
+    <h2> This is another H2 tag</h2>
+    <h3>This is a H3 tag</h3>
+    <script>
+        var h2Elements = document.getElementsByTagName("h2");
+        var h3Elements = document.getElementsByTagName("h3");
+        var h2Count = h2Elements.length;
+        var h3Count = h3Elements.length;
+        var totalCount = h2Count + h3Count;
+        console.log('Total number of h2 and h3 tags: ' + totalCount);
+    </script>
+    
+</body>
+</html>
