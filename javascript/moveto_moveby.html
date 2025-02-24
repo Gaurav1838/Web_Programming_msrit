@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><button onclick="open_window()">window</button></p>
+    <p><button onclick="move_to()">move window to 175 175</button></p>
+    <p><button onclick="move_by()">move window by 75 75</button></p>
+
+    <script> 
+        let win
+        function open_window() {
+            win = window.open("", "", "width=500, height=500");
+        }
+
+        function move_to() {
+            win.moveTo(150, 150);
+        }
+
+        function move_by() {
+            win.moveBy(75, 75);
+        }   
+    </script>
+</body>
+</html>
