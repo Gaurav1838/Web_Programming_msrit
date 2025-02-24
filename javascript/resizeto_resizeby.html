@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resizeto and resizeby</title>
+</head>
+<body>
+    <p><button onclick="open_window()">window</button></p>
+    <p><button onclick="resize_to()">resize window to 800 800</button></p>
+    <p><button onclick="resize_by()">resize window by -100 -100</button></p>
+
+    <script> 
+        let win
+        function open_window() {
+            win = window.open("", "", "width=150, height=150");
+        }
+
+        function resize_to() {
+            win.resizeTo(800, 800);
+        }
+
+        function resize_by() {
+            win.resizeBy(-100, -100);
+        }   
+    </script>
+</body>
+</html>
