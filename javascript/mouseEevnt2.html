@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On click events</title>
+    <style>
+        #inp{
+            border: 1px solid black;
+            display: inline-block;
+            padding: 2px;
+            position: absolute;
+        }
+        #inp input{
+            outline: none;
+            border: none;         
+        }
+        #inp img{
+            position: relative;
+            top: 2px;            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="inp">
+        <input type="text" name="" id="txt"> 
+        <img id="img" style="height: 15px;">
+    </div>
+    <script>
+        let inp = document.getElementById("txt")
+        let img = document.getElementById("img")
+        inp.addEventListener("input",function(){
+            if (inp.value == "JAVASCRIPT") img.setAttribute("src","../Assets/tick.png")
+            if (inp.value != "JAVASCRIPT") img.setAttribute("src","../Assets/close.png")
+        })
+    </script>
+</body>
+</html>
