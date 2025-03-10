@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="load()">
+    <script>
+        function load(){
+            alert("Welcome to our website")
+            let name = window.prompt("Please enter your name")
+            if (name ==="") {
+                document.write("You didnt enter a name!")
+            } else{
+                document.write(`Hello, ${name}!`)
+            }
+            let cnf = window.confirm("Do you want to proceed?")
+            if (cnf) {
+                console.log("User chose to proceed");
+            }else{
+                console.log("User cancelled");
+            }
+        }
+    </script>
+</body>
+</html>
